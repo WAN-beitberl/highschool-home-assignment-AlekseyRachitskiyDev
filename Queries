@@ -1,0 +1,43 @@
+CREATE TABLE stu_info(
+id INT NOT NULL,
+first_name VARCHAR(255) NOT NULL,
+last_name VARCHAR(255) NOT NULL,
+email VARCHAR(255) NOT NULL,
+gender VARCHAR(255) NOT NULL,
+age INT NOT NULL,
+grade_avg DECIMAL(3,2) NOT NULL,
+indentification_card INT NOT NULL UNIQUE,
+PRIMARY KEY(id)
+)
+
+-------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE stu_height(
+id INT NOT NULL,
+cm_height INT NOT NULL,
+PRIMARY KEY(id)
+)
+
+-------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE stu_ip(
+id INT NOT NULL,
+ip VARCHAR(255) NOT NULL,
+PRIMARY KEY(id)
+)
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE car_info(
+id INT AUTO_INCREMENT,
+has_car BOOLEAN NOT NULL,
+car_color VARCHAR(255)
+PRIMARY KEY(id)
+)
+
+-------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE friendships(
+id INT AUTO_INCREMENT,
+friend_id INT,
+other_friend_id INT,
+PRIMARY KEY(id)
+)
+
