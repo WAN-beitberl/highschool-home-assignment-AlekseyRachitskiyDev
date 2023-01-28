@@ -1,3 +1,7 @@
+-- Database Creation
+CREATE DATABASE summary_report;
+USE summary_report;
+-------------------------------------------------------------------------------------------------------------------------------------
 CREATE TABLE stu_info(
 id INT NOT NULL,
 first_name VARCHAR(255) NOT NULL,
@@ -40,4 +44,6 @@ friend_id INT,
 other_friend_id INT,
 PRIMARY KEY(id)
 )
-
+-------------------------------------------------------------------------------------------------------------------------------------
+--Sima's view
+CREATE VIEW Sima AS SELECT identification_card, grade_avg FROM stu_info;
